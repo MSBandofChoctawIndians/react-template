@@ -41,7 +41,6 @@
     "vite": "^3.2.7"
   },
   "dependencies": {
-    "@jridgewell/sourcemap-codec": "^1.4.15",
-    "react-router-dom": "^6.20.1"
+    "@jridgewell/sourcemap-codec": "^1.4.15"
   }
 }
