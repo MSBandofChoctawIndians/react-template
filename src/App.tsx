@@ -1,5 +1,5 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
 export default function App() {
   return (
@@ -13,13 +13,26 @@ export default function App() {
                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
                 alt="Your Company"
               />
+              <h1>Hello</h1>
               <div className="mt-24 sm:mt-32 lg:mt-16">
                 <a href="#" className="inline-flex">
-                  <span className="ring-indigo-500 ring-inset ring-offset-black text-indigo-400 leading-6 font-semibold text-sm py-1 px-3 bg-indigo-500/10 rounded-full">Latest updates</span>
-                  <span className="divide-x-[1.5rem] text-gray-300 leading-6 font-medium text-sm items-center inline-flex">
+                  <span className="rounded-full bg-indigo-500/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-400 ring-1 ring-inset ring-indigo-500/20 ring-offset-black">
+                    Latest updates
+                  </span>
+                  <span className="inline-flex items-center divide-x-[1.5rem] text-sm font-medium leading-6 text-gray-300">
                     <span>Just shipped v1.0</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" className="divide-x-[0.5rem] text-gray-500 w-5 h-5">
-                      <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd"></path>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      className="h-5 w-5 divide-x-[0.5rem] text-gray-500"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                        clip-rule="evenodd"
+                      ></path>
                     </svg>
                   </span>
                 </a>
