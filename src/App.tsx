@@ -13,7 +13,6 @@ export default function App() {
                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
                 alt="Your Company"
               />
-              <h1>Hello</h1>
               <div className="mt-24 sm:mt-32 lg:mt-16">
                 <a href="#" className="inline-flex">
                   <span className="rounded-full bg-indigo-500/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-400 ring-1 ring-inset ring-indigo-500/20 ring-offset-black">
