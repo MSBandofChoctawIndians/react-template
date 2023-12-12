@@ -2,7 +2,9 @@ import React from 'react'
 import Card from './Card'
 
 function App () {
-  <Card />
+  return (
+    <Card />
+  )
 }
 
 export default App
