@@ -20,7 +20,7 @@
     "root": true
   },
   "devDependencies": {
-    "@types/react": "18.0.15",
+    "@types/react": "^18.0.15",
     "@types/react-dom": "18.0.6",
     "@typescript-eslint/eslint-plugin": "6.13.1",
     "@typescript-eslint/parser": "6.13.1",
@@ -43,6 +43,13 @@
   },
   "dependencies": {
     "@jridgewell/sourcemap-codec": "^1.4.15",
-    "react-router-dom": "^6.20.1"
+    "@radix-ui/react-navigation-menu": "^1.1.4",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
+    "lucide-react": "^0.294.0",
+    "react-router-dom": "^6.20.1",
+    "shadcn-ui": "^0.4.1",
+    "tailwind-merge": "^2.1.0",
+    "tailwindcss-animate": "^1.0.7"
   }
 }
