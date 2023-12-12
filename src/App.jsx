@@ -1,9 +1,10 @@
-import Header from "./Header"
+import Header from './Header'
+import React from 'react'
 
-function App() {
+function App () {
   return (
     <Header />
-  );
+  )
 };
 
 export default App
