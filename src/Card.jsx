@@ -1,5 +1,5 @@
 import React from 'react'
-import Chevron from '/chevron.svg'
+import Chevron from './chevron.svg'
 
 function Card () {
   return (
