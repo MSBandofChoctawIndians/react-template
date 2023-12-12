@@ -3,7 +3,7 @@ import React from 'react'
 function Footer () {
   return (
     <footer>
-      <p>© 2021</p>
+      <p>&copy; {new Date().getFullYear} Your website name</p>
     </footer>
   )
 }
