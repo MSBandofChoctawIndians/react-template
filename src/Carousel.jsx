@@ -29,14 +29,18 @@ function Carousel({ images }) {
       </button>
       <div className="carousel-image-container">
         {images.map((image, index) => (
-          <img
-            key={index}
-            className={`carousel-image ${
-              index === currentImageIndex ? 'active' : ''
-            }`}
-            src={image}
-            alt="Background"
-          />
+          <div key={index}>
+            <img
+              className={`carousel-image ${
+                index === currentImageIndex ? 'active' : ''
+              }`}
+              src={image}
+              alt="Background"
+            />
+            {index === currentImageIndex && (
+              <div className="carousel-caption">{image.caption}</div>
+            )}
+          </div>
         ))}
         <CarouselDots numDots={images.length} activeDot={currentImageIndex} />
       </div>
