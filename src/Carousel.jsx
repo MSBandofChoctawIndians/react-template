@@ -1,10 +1,27 @@
 import React, { useState, useEffect } from 'react'
 import './Carousel.css'
 
+/**
+ * A carousel component that displays a slideshow of images.
+ *
+ * @component
+ * @param {Object[]} images - An array of image objects.
+ * @param {string} images[].src - The source URL of the image.
+ * @param {string} images[].caption - The caption for the image.
+ * @returns {JSX.Element} The Carousel component.
+ */
 function Carousel({ images }) {
+  // State variables
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const [isPaused, setIsPaused] = useState(false)
 
+  // Preload the first image
+  useEffect(() => {
+    const img = new Image()
+    img.src = images[0].src
+  }, [images])
+
+  // Automatic image transition
   useEffect(() => {
     if (!isPaused) {
       const timer = setInterval(() => {
@@ -16,16 +33,19 @@ function Carousel({ images }) {
     }
   }, [currentImageIndex, images.length, isPaused])
 
+  // Go to the previous image
   const prevImage = () => {
     const prevIndex = (currentImageIndex - 1 + images.length) % images.length
     setCurrentImageIndex(prevIndex)
   }
 
+  // Go to the next image
   const nextImage = () => {
     const nextIndex = (currentImageIndex + 1) % images.length
     setCurrentImageIndex(nextIndex)
   }
 
+  // Render the Carousel component
   return (
     <div className="carousel-container">
       <button className="carousel-button" onClick={prevImage}>
@@ -59,6 +79,7 @@ function Carousel({ images }) {
   )
 }
 
+// Renders the carousel dots
 function CarouselDots({ numDots, activeDot }) {
   return (
     <div className="carousel-dots">
