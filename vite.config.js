@@ -1,8 +1,12 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import svgr from '@svgr/webpack'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   base: '/react-template/',
-  plugins: [react()]
+  plugins: [svgr(), react()],
+  optimizeDeps: {
+    include: ['@svgr/webpack']
+  }
 })

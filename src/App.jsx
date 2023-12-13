@@ -4,9 +4,16 @@ import Button from './Button'
 import Student from './Student'
 import UserGreeting from './UserGreeting'
 import List from './List'
+import { ReactComponent as Brand } from './assets/chevron.svg'
 
 function App() {
-  const fruits = []
+  const fruits = [
+    { id: 1, name: 'apple', calories: 95 },
+    { id: 2, name: 'orange', calories: 45 },
+    { id: 3, name: 'banana', calories: 105 },
+    { id: 4, name: 'coconut', calories: 159 },
+    { id: 5, name: 'pineapple', calories: 37 }
+  ]
 
   const vegetables = [
     { id: 1, name: 'potatoes', calories: 110 },
@@ -19,6 +26,7 @@ function App() {
   return (
     <>
       <h1>React App</h1>
+      <Brand />
       <UserGreeting isLoggedIn={true} username="BroCode" />
       <Card />
       <Button />
@@ -27,10 +35,10 @@ function App() {
       <Student name="Squidward" age={50} isStudent={false} />
       <Student name="Sandy" age={27} isStudent={true} />
       <Student />
-      {fruits.length > 0 ? <List items={fruits} category="Fruits" /> : null}
-      {vegetables.length > 0 ? (
+      {fruits.length > 0 && <List items={fruits} category="Fruits" />}
+      {vegetables.length > 0 && (
         <List items={vegetables} category="Vegetables" />
-      ) : null}
+      )}
     </>
   )
 }

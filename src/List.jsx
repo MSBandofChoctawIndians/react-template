@@ -21,5 +21,9 @@ List.propTypes = {
   items: PropTypes.array,
   category: PropTypes.string
 }
+List.defaultProps = {
+  category: 'Category',
+  items: []
+}
 
 export default List
