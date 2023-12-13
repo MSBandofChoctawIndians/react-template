@@ -2,11 +2,13 @@ import React from 'react'
 import Card from './Card'
 import Button from './Button'
 import Student from './Student'
+import UserGreeting from './UserGreeting'
 
 function App () {
   return (
     <>
       <h1>React App</h1>
+      <UserGreeting isLoggedIn={true} username='BroCode' />
       <Card />
       <Button />
       <Student name='Spongebob' age={30} isStudent={true} />
