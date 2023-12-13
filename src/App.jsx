@@ -8,9 +8,10 @@ import Carousel from './Carousel'
 
 function App() {
   const images = [
-    'https://images.unsplash.com/photo-1593642532453-9d9e9e3c5c1d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmFja2dyb3VuZCUyMHN0b3JlJTIwc2hvd3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80',
-    'https://images.unsplash.com/photo-1593642532453-9d9e9e3c5c1d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmFja2dyb3VuZCUyMHN0b3JlJTIwc2hvd3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80',
-    'https://images.unsplash.com/photo-1593642532453-9d9e9e3c5c1d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmFja2dyb3VuZCUyMHN0b3JlJTIwc2hvd3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80'
+    'https://images.unsplash.com/photo-1535732820275-9ffd998cac22?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    'https://images.unsplash.com/photo-1537819191377-d3305ffddce4?q=80&w=1721&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    'https://images.unsplash.com/photo-1509024644558-2f56ce76c490?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    'https://images.unsplash.com/photo-1537346439163-eafb59bdc400?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   ]
   const fruits = [
     { id: 1, name: 'apple', calories: 95 },
