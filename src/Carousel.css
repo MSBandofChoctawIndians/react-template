@@ -1,0 +1,13 @@
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+.carousel-button {
+  margin: 0 10px;
+}
