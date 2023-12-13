@@ -4,7 +4,7 @@ import Button from './Button'
 import Student from './Student'
 import UserGreeting from './UserGreeting'
 import List from './List'
-import { ReactComponent as Brand } from './assets/chevron.svg'
+import { ReactComponent as Brand } from './chevron.svg'
 
 function App() {
   const fruits = [
