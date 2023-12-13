@@ -17,11 +17,13 @@ function Carousel({ images }) {
       <button className="carousel-button" onClick={prevImage}>
         Previous
       </button>
-      <img
-        className="carousel-image"
-        src={images[currentImageIndex]}
-        alt="Background"
-      />
+      <div className="carousel-image-container">
+        <img
+          className="carousel-image"
+          src={images[currentImageIndex]}
+          alt="Background"
+        />
+      </div>
       <button className="carousel-button" onClick={nextImage}>
         Next
       </button>
