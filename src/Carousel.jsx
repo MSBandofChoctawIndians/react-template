@@ -27,6 +27,20 @@ function Carousel({ images }) {
       <button className="carousel-button" onClick={nextImage}>
         Next
       </button>
+      <CarouselDots numDots={images.length} activeDot={currentImageIndex} />
+    </div>
+  )
+}
+
+function CarouselDots({ numDots, activeDot }) {
+  return (
+    <div className="carousel-dots">
+      {Array.from({ length: numDots }).map((_, i) => (
+        <span
+          key={i}
+          className={`carousel-dot ${index === activeDot ? 'active' : ''}`}
+        />
+      ))}
     </div>
   )
 }

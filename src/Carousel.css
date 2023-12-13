@@ -18,3 +18,19 @@
 .carousel-button {
   margin: 0 10px;
 }
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.carousel-dot {
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 2px;
+}
+.carousel-dot.active {
+  background-color: #717171;
+}
