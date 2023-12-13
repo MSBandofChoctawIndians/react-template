@@ -3,14 +3,17 @@ import './Carousel.css'
 
 function Carousel({ images }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
+  const [isPaused, setIsPaused] = useState(false)
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      const newIndex = (currentImageIndex + 1) % images.length
-      setCurrentImageIndex(newIndex)
-    }, 3000)
+    if (isPaused) {
+      const timer = setInterval(() => {
+        const newIndex = (currentImageIndex + 1) % images.length
+        setCurrentImageIndex(newIndex)
+      }, 3000)
 
-    return () => clearInterval(timer)
+      return () => clearInterval(timer)
+    }
   }, [currentImageIndex, images.length])
 
   const prevImage = () => {
@@ -27,7 +30,11 @@ function Carousel({ images }) {
       <button className="carousel-button" onClick={prevImage}>
         Previous
       </button>
-      <div className="carousel-image-container">
+      <div
+        className="carousel-image-container"
+        onMouseEnter={() => setIsPaused(true)}
+        onMouseLeave={() => setIsPaused(false)}
+      >
         {images.map((image, index) => (
           <div key={index}>
             <img
