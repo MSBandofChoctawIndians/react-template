@@ -15,12 +15,6 @@ function Carousel({ images }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const [isPaused, setIsPaused] = useState(false)
 
-  // Preload the first image
-  useEffect(() => {
-    const img = new Image()
-    img.src = images[0].src
-  }, [images])
-
   // Automatic image transition
   useEffect(() => {
     if (!isPaused) {
