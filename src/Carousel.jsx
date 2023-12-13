@@ -18,11 +18,16 @@ function Carousel({ images }) {
         Previous
       </button>
       <div className="carousel-image-container">
-        <img
-          className="carousel-image"
-          src={images[currentImageIndex]}
-          alt="Background"
-        />
+        {images.map((image, index) => (
+          <img
+            key={index}
+            className={`carousel-image ${
+              index === currentImageIndex ? 'active' : ''
+            }`}
+            src={image}
+            alt="Background"
+          />
+        ))}
         <CarouselDots numDots={images.length} activeDot={currentImageIndex} />
       </div>
       <button className="carousel-button" onClick={nextImage}>
