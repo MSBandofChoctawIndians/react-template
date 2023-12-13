@@ -1,4 +1,4 @@
-import { ReactComponent as Brand } from './assets/chevron.svg'
+import Brand from './assets/chevron.svg'
 
 function Navbar() {
   const NavLinks = [
@@ -11,7 +11,7 @@ function Navbar() {
   return (
     <nav>
       <div>
-        <Brand />
+        <img src={Brand} alt="Your logo" />
       </div>
       <div>
         <ul>
