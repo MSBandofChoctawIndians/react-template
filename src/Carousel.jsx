@@ -34,7 +34,7 @@ function Carousel({ images }) {
               className={`carousel-image ${
                 index === currentImageIndex ? 'active' : ''
               }`}
-              src={image}
+              src={image.src}
               alt="Background"
             />
             {index === currentImageIndex && (
