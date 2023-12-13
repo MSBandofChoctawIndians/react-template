@@ -38,7 +38,7 @@ function CarouselDots({ numDots, activeDot }) {
       {Array.from({ length: numDots }).map((_, i) => (
         <span
           key={i}
-          className={`carousel-dot ${index === activeDot ? 'active' : ''}`}
+          className={`carousel-dot ${i === activeDot ? 'active' : ''}`}
         />
       ))}
     </div>
