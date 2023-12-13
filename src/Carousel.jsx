@@ -1,8 +1,18 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Carousel.css'
 
 function Carousel({ images }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      const newIndex = (currentImageIndex + 1) % images.length
+      setCurrentImageIndex(newIndex)
+    }, 3000)
+
+    return () => clearInterval(timer)
+  }, [currentImageIndex, images.length])
+
   const prevImage = () => {
     const prevIndex = (currentImageIndex - 1 + images.length) % images.length
     setCurrentImageIndex(prevIndex)
