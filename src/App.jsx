@@ -4,6 +4,7 @@ import Button from './Button'
 import Student from './Student'
 import UserGreeting from './UserGreeting'
 import List from './List'
+import Navbar from './Navbar'
 
 function App() {
   const fruits = [
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <>
+      <Navbar />
       <h1>React App</h1>
       <UserGreeting isLoggedIn={true} username="BroCode" />
       <Card />
