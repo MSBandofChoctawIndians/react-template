@@ -23,11 +23,11 @@ function Carousel({ images }) {
           src={images[currentImageIndex]}
           alt="Background"
         />
+        <CarouselDots numDots={images.length} activeDot={currentImageIndex} />
       </div>
       <button className="carousel-button" onClick={nextImage}>
         Next
       </button>
-      <CarouselDots numDots={images.length} activeDot={currentImageIndex} />
     </div>
   )
 }
