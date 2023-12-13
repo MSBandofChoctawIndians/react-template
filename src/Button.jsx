@@ -1,7 +1,6 @@
 import React from 'react'
 
 function Button () {
-
   const styles = {
     backgroundColor: 'hsl(200, 100%, 28%)',
     color: 'white',

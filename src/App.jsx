@@ -9,7 +9,7 @@ function App () {
       <h1>React App</h1>
       <Card />
       <Button />
-      <Student name='John' />
+      <Student name='John' age={30} isStudent={true} />
     </>
   )
 }
