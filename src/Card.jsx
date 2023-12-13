@@ -1,12 +1,18 @@
 import React from 'react'
 import Chevron from './assets/chevron.svg'
 
-function Card () {
+function Card() {
   return (
     <div className="card">
-      <img className="card-image" src={Chevron} height={150} width={150} alt="profile picture" />
+      <img
+        className="card-image"
+        src={Chevron}
+        height={150}
+        width={150}
+        alt="profile picture"
+      />
       <h2 className="card-title">Sonny Mattera</h2>
-      <p className='card-text'>I make websites and play video games</p>
+      <p className="card-text">I make websites and play video games</p>
     </div>
   )
 }

@@ -3,10 +3,7 @@ module.exports = {
     browser: true,
     es2021: true
   },
-  extends: [
-    'standard',
-    'plugin:react/recommended'
-  ],
+  extends: ['standard', 'plugin:react/recommended'],
   settings: {
     react: {
       version: 'detect'
@@ -17,9 +14,7 @@ module.exports = {
       env: {
         node: true
       },
-      files: [
-        '.eslintrc.{js,cjs}'
-      ],
+      files: ['.eslintrc.{js,cjs}'],
       parserOptions: {
         sourceType: 'script'
       }
@@ -29,9 +24,6 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module'
   },
-  plugins: [
-    'react'
-  ],
-  rules: {
-  }
+  plugins: ['react', 'prettier'],
+  rules: { 'prettier/prettier': 'error', 'space-before-function-paren': 'off' }
 }

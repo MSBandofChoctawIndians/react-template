@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Food () {
+function Food() {
   const food1 = 'Orange'
   const food2 = 'Banana'
   return (
