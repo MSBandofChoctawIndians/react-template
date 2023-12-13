@@ -1,4 +1,4 @@
-import { ReactComponent as Brand } from './assets/brand.svg'
+import { ReactComponent as Brand } from '../assets/brand.svg'
 
 function Navbar() {
   const NavLinks = [
