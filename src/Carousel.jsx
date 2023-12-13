@@ -6,7 +6,7 @@ function Carousel({ images }) {
   const [isPaused, setIsPaused] = useState(false)
 
   useEffect(() => {
-    if (isPaused) {
+    if (!isPaused) {
       const timer = setInterval(() => {
         const newIndex = (currentImageIndex + 1) % images.length
         setCurrentImageIndex(newIndex)
@@ -14,12 +14,13 @@ function Carousel({ images }) {
 
       return () => clearInterval(timer)
     }
-  }, [currentImageIndex, images.length])
+  }, [currentImageIndex, images.length, isPaused])
 
   const prevImage = () => {
     const prevIndex = (currentImageIndex - 1 + images.length) % images.length
     setCurrentImageIndex(prevIndex)
   }
+
   const nextImage = () => {
     const nextIndex = (currentImageIndex + 1) % images.length
     setCurrentImageIndex(nextIndex)
@@ -65,7 +66,7 @@ function CarouselDots({ numDots, activeDot }) {
         <span
           key={i}
           className={`carousel-dot ${i === activeDot ? 'active' : ''}`}
-        />
+        ></span>
       ))}
     </div>
   )
