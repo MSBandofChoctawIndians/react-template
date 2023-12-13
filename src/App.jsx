@@ -4,7 +4,6 @@ import Button from './Button'
 import Student from './Student'
 import UserGreeting from './UserGreeting'
 import List from './List'
-import { ReactComponent as Chevron } from './assets/chevron.svg'
 
 function App() {
   const fruits = [
@@ -26,7 +25,6 @@ function App() {
   return (
     <>
       <h1>React App</h1>
-      <Chevron />
       <UserGreeting isLoggedIn={true} username="BroCode" />
       <Card />
       <Button />
