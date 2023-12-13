@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from './Card'
 import Button from './Button'
+import Student from './Student'
 
 function App () {
   return (
@@ -8,6 +9,7 @@ function App () {
       <h1>React App</h1>
       <Card />
       <Button />
+      <Student name='John' />
     </>
   )
 }
