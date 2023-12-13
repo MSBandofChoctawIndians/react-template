@@ -12,8 +12,8 @@ function List(props) {
 
   return (
     <>
-      <h3>{props.category}</h3>
-      <ol>{listItems}</ol>
+      <h3 className="list-category">{props.category}</h3>
+      <ol className="list-items">{listItems}</ol>
     </>
   )
 }
