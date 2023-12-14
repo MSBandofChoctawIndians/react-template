@@ -5,7 +5,6 @@ import List from './List'
 import Carousel from './Carousel'
 
 function App() {
-  const Card = React.lazy(() => import('./Card'))
   const Button = React.lazy(() => import('./Button'))
   const Student = React.lazy(() => import('./Student'))
   const List = React.lazy(() => import('./List'))
@@ -47,9 +46,9 @@ function App() {
     <>
       <h1>React App</h1>
       <Carousel images={images} />
+      <Card />
+      <Button />
       <React.Suspense fallback={<div>Loading...</div>}>
-        <Card />
-        <Button />
         <Student name="Spongebob" age={30} isStudent={true} />
         <Student name="Patrick" age={42} isStudent={false} />
         <Student name="Squidward" age={50} isStudent={false} />
