@@ -6,6 +6,9 @@ import Carousel from './Carousel'
 
 function App() {
   const Card = React.lazy(() => import('./Card'))
+  const Button = React.lazy(() => import('./Button'))
+  const Student = React.lazy(() => import('./Student'))
+  const List = React.lazy(() => import('./List'))
   const images = [
     {
       src: 'https://images.unsplash.com/photo-1535732820275-9ffd998cac22?q=80&w=500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -46,17 +49,15 @@ function App() {
       <Carousel images={images} />
       <React.Suspense fallback={<div>Loading...</div>}>
         <Card />
-      </React.Suspense>
-      <Button />
-      <Student name="Spongebob" age={30} isStudent={true} />
-      <Student name="Patrick" age={42} isStudent={false} />
-      <Student name="Squidward" age={50} isStudent={false} />
-      <Student name="Sandy" age={27} isStudent={true} />
-      <Student />
-      {fruits.length > 0 && <List items={fruits} category="Fruits" />}
-      {vegetables.length > 0 && (
+        <Button />
+        <Student name="Spongebob" age={30} isStudent={true} />
+        <Student name="Patrick" age={42} isStudent={false} />
+        <Student name="Squidward" age={50} isStudent={false} />
+        <Student name="Sandy" age={27} isStudent={true} />
+        <Student />
+        <List items={fruits} category="Fruits" />
         <List items={vegetables} category="Vegetables" />
-      )}
+      </React.Suspense>
     </>
   )
 }

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import PropTypes from 'prop-types'
 import './Carousel.css'
 
 /**
@@ -85,6 +86,23 @@ function CarouselDots({ numDots, activeDot }) {
       ))}
     </div>
   )
+}
+
+Carousel.propTypes = {
+  images:
+    (PropTypes.arrayOf(
+      PropTypes.shape({
+        src: PropTypes.string,
+        caption: PropTypes.string
+      })
+    ).map = {
+      src: PropTypes.string,
+      caption: PropTypes.string
+    }.length =
+      {
+        src: PropTypes.string,
+        caption: PropTypes.string
+      })
 }
 
 export default Carousel
