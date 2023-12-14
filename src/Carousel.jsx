@@ -57,8 +57,10 @@ function Carousel({ images }) {
             className={`carousel-image ${
               index === currentImageIndex ? 'active' : ''
             }`}
+            style={{
+              backgroundImage: `url(${image.src})`
+            }} /* Set the image as a background image */
           >
-            <img src={image.src} alt="Background" />
             {index === currentImageIndex && (
               <div className="carousel-caption">{image.caption}</div>
             )}
