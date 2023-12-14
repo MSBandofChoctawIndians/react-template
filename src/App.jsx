@@ -1,8 +1,7 @@
 import React from 'react'
-import Button from './Button'
-import Student from './Student'
-import List from './List'
 import Carousel from './Carousel'
+import Card from './Card'
+import Button from './Button'
 
 function App() {
   const Button = React.lazy(() => import('./Button'))
