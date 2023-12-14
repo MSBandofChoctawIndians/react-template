@@ -27,7 +27,21 @@
 }
 
 .carousel-button {
-  margin: 1em;
+  position: absolute;
+  top: 50%;
+  background-color: transparent;
+  color: white;
+  font-size: 2em;
+  border: none;
+  cursor: pointer;
+}
+
+.carousel-button.left {
+  left: 10px;
+}
+
+.carousel-button.right {
+  right: 10px;
 }
 
 @media (max-width: 600px) {

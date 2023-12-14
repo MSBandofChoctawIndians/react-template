@@ -43,8 +43,11 @@ function Carousel({ images }) {
   // Render the Carousel component
   return (
     <div className="carousel-container">
-      <button className="carousel-button" onClick={prevImage}>
-        Previous
+      <button
+        className="carousel-button carousel-button-prev"
+        onClick={prevImage}
+      >
+        &#10094; {/* Unicode for left arrow */}
       </button>
       <div
         className="carousel-image-container"
@@ -68,8 +71,11 @@ function Carousel({ images }) {
         ))}
         <CarouselDots numDots={images.length} activeDot={currentImageIndex} />
       </div>
-      <button className="carousel-button" onClick={nextImage}>
-        Next
+      <button
+        className="carousel-button carousel-button-next"
+        onClick={nextImage}
+      >
+        &#10095; {/* Unicode for right arrow */}
       </button>
     </div>
   )
