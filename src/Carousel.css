@@ -36,11 +36,11 @@
   cursor: pointer;
 }
 
-.carousel-button.left {
+.carousel-button-prev {
   left: 10px;
 }
 
-.carousel-button.right {
+.carousel-button-next {
   right: 10px;
 }
 
