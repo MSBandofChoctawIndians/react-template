@@ -19,6 +19,7 @@
   background-size: cover;
   background-position: center;
   transition: opacity 0.5s ease-in-out;
+  display: none;
 }
 
 .carousel-image.active {
