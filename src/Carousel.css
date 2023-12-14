@@ -1,7 +1,5 @@
 .carousel-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
   width: 100%;
 }
 
@@ -12,12 +10,13 @@
 }
 
 .carousel-image {
-  min-width: 100%;
+  display: none;
+  width: 100%;
   transition: opacity 0.5s ease-in-out;
 }
 
 .carousel-image.active {
-  opacity: 1;
+  display: block;
 }
 
 .carousel-button {

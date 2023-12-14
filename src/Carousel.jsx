@@ -52,14 +52,13 @@ function Carousel({ images }) {
         onMouseLeave={() => setIsPaused(false)}
       >
         {images.map((image, index) => (
-          <div key={index}>
-            <img
-              className={`carousel-image ${
-                index === currentImageIndex ? 'active' : ''
-              }`}
-              src={image.src}
-              alt="Background"
-            />
+          <div
+            key={index}
+            className={`carousel-image ${
+              index === currentImageIndex ? 'active' : ''
+            }`}
+          >
+            <img src={image.src} alt="Background" />
             {index === currentImageIndex && (
               <div className="carousel-caption">{image.caption}</div>
             )}
