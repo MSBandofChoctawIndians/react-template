@@ -7,14 +7,12 @@
 
 .carousel-image-container {
   display: flex;
-  justify-content: center;
   width: 100%;
   overflow: hidden;
 }
 
 .carousel-image {
-  width: 100%;
-  flex-shrink: 0; /* Prevents the images from shrinking to fit into the container */
+  min-width: 100%;
   transition: opacity 0.5s ease-in-out;
 }
 
@@ -28,7 +26,7 @@
 
 @media (max-width: 600px) {
   .carousel-image {
-    width: 100%;
+    min-width: 100%;
   }
 }
 
