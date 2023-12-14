@@ -4,7 +4,6 @@ import Card from './Card'
 import Button from './Button'
 
 function App() {
-  const Button = React.lazy(() => import('./Button'))
   const Student = React.lazy(() => import('./Student'))
   const List = React.lazy(() => import('./List'))
   const images = [
