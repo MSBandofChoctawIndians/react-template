@@ -39,9 +39,9 @@ const Navbar = ({ links }) => {
           Close
         </button>
         {links.map((link, id) => (
-          <a href={link.url} key={id}>
-            {link.label}
-          </a>
+          <li key={id}>
+            <a href={link.url}>{link.label}</a>
+          </li>
         ))}
       </div>
       <div className="nav-desktop">
