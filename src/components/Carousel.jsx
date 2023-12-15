@@ -25,7 +25,7 @@ const Carousel = ({ images }) => {
       {images.map((image, index) => (
         <img
           key={index}
-          src={image}
+          src={image.src}
           className={`carousel-image ${index === activeIndex ? 'active' : ''}`}
           alt="carousel"
         />
