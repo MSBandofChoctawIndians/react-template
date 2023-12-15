@@ -4,6 +4,9 @@
   padding-top: 56.25%;
   overflow: hidden;
   max-height: 700px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
 }
 
 .carousel-image-container {
@@ -12,6 +15,7 @@
   max-height: 700px;
   padding-top: 56.25%;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .carousel-container::before {
