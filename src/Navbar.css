@@ -1,24 +1,39 @@
 .navbar {
   display: flex;
-  justify-content: space-around;
-  padding: 1em;
-  background-color: #333;
-  color: white;
+  justify-content: space-between;
+  padding: 20px;
 }
-.navbar ul {
+
+.logo {
+  flex: 1;
+}
+
+.nav-links-desktop {
   display: flex;
-  list-style: none;
+  gap: 20px;
+  flex: 3;
+  justify-content: center;
 }
-.navbar li {
-  margin: 0 1em;
+
+.nav-mobile,
+.nav-links-mobile {
+  display: none;
 }
-.navbar a {
-  color: white;
-  text-decoration: none;
-}
-/* Responsive design for screens smaller than 600px */
-@media (max-width: 600px) {
-  .navbar ul {
+
+@media (max-width: 768px) {
+  .nav-desktop {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links-mobile {
+    display: flex;
     flex-direction: column;
+    gap: 20px;
   }
 }
