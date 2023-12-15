@@ -46,11 +46,13 @@ const Navbar = ({ links }) => {
         >
           Close
         </button>
-        {links.map((link, id) => (
-          <li key={id}>
-            <a href={link.url}>{link.label}</a>
-          </li>
-        ))}
+        <ul>
+          {links.map((link, id) => (
+            <li key={id}>
+              <a href={link.url}>{link.label}</a>
+            </li>
+          ))}
+        </ul>
       </div>
       <div className="nav-desktop">
         <div className="logo">
