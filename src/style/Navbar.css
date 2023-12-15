@@ -4,6 +4,7 @@
   align-items: center;
   padding: 20px;
   background-color: #f8f9fa;
+  z-index: 2000;
 }
 
 .nav-mobile {
@@ -40,6 +41,16 @@
   transform: translateX(-100%);
   overflow-y: auto;
   z-index: 1000;
+  padding-top: 60px;
+}
+
+.nav-links-mobile ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-links-mobile li {
+  padding: 10px 0;
 }
 
 .nav-links-mobile.open {
