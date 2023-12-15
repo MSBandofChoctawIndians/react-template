@@ -17,7 +17,11 @@ const Navbar = ({ links }) => {
   return (
     <nav className="navbar">
       <div className="nav-mobile">
-        <button onClick={() => setIsOpen(!isOpen)} className="default">
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="default"
+          aria-label="Menu"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="16"
@@ -35,7 +39,11 @@ const Navbar = ({ links }) => {
         <button className="primary">Button</button>
       </div>
       <div className={`nav-links-mobile ${isOpen ? 'open' : ''}`}>
-        <button onClick={() => setIsOpen(false)} className="close-btn">
+        <button
+          onClick={() => setIsOpen(false)}
+          className="close-btn"
+          aria-label="Close menu"
+        >
           Close
         </button>
         {links.map((link, id) => (
