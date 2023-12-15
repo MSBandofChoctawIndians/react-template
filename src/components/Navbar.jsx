@@ -35,6 +35,9 @@ const Navbar = ({ links }) => {
         <button className="primary">Button</button>
       </div>
       <div className={`nav-links-mobile ${isOpen ? 'open' : ''}`}>
+        <button onClick={() => setIsOpen(false)} className="close-btn">
+          Close
+        </button>
         {links.map((link, id) => (
           <a href={link.url} key={id}>
             {link.label}
