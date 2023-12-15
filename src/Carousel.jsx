@@ -69,11 +69,9 @@ function Carousel({ images }) {
             )}
           </div>
         ))}
-        <CarouselDots
-          numDots={images.length}
-          activeDot={currentImageIndex}
-          className="carousel-dots"
-        />
+        <div className="carousel-dots">
+          <CarouselDots numDots={images.length} activeDot={currentImageIndex} />
+        </div>
       </div>
       <button
         className="carousel-button carousel-button-next"
