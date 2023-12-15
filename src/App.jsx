@@ -2,7 +2,7 @@ import React from 'react'
 import Carousel from './Carousel'
 import Card from './Card'
 import Button from './Button'
-import Navbar from './Navbar'
+import Navbar from './components/Navbar'
 
 function App() {
   const Student = React.lazy(() => import('./Student'))
