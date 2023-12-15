@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Chevron from '../assets/chevron.svg'
 import PropTypes from 'prop-types'
-import './Navbar.css'
+import '../style/Navbar.css'
 
 const Navbar = ({ links }) => {
   const [isOpen, setIsOpen] = useState(false)
