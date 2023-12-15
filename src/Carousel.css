@@ -30,6 +30,7 @@
     rgba(0, 0, 0, 0.6) 100%
   );
   pointer-events: none;
+  z-index: 1;
 }
 
 .carousel-image {
@@ -57,7 +58,6 @@
   font-size: 2em;
   border: none;
   cursor: pointer;
-  z-index: 2;
 }
 
 .carousel-button-prev {
