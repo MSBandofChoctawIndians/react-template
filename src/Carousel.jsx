@@ -70,7 +70,11 @@ function Carousel({ images }) {
           </div>
         ))}
         <div className="carousel-dots">
-          <CarouselDots numDots={images.length} activeDot={currentImageIndex} />
+          <CarouselDots
+            numDots={images.length}
+            activeDot={currentImageIndex}
+            setCurrentImageIndex={setCurrentImageIndex}
+          />
         </div>
       </div>
       <button
