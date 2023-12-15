@@ -22,6 +22,11 @@
   gap: 10px;
 }
 
+.logo img {
+  width: 28.2px;
+  height: 30px;
+}
+
 .nav-links-mobile {
   display: flex;
   flex-direction: column;
