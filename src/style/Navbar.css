@@ -23,8 +23,8 @@
 }
 
 .logo img {
-  width: 28.2px;
-  height: 30px;
+  height: 50px;
+  width: auto;
 }
 
 .nav-links-mobile {
@@ -76,6 +76,13 @@ button.default:hover {
 @media (max-width: 767px) {
   .nav-desktop {
     display: none;
+  }
+  .logo {
+    font-size: 1em;
+  }
+  .logo img {
+    height: 30px;
+    width: auto;
   }
 }
 

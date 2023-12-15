@@ -46,7 +46,8 @@ const Navbar = ({ links }) => {
       <div className="nav-desktop">
         <div className="logo">
           <img src={Chevron} alt="logo" />
-          React Template
+          Office of <br />
+          Public Information
         </div>
         <div className="nav-links-desktop">
           {links.map((link, id) => (
