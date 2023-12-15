@@ -28,9 +28,21 @@
 }
 
 .nav-links-mobile {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 75%; /* Adjust as needed */
+  height: 100%;
+  background: #fff; /* Adjust as needed */
+  padding: 20px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-100%);
+  overflow-y: auto;
+}
+
+.nav-links-mobile.open {
+  transform: translateX(0);
 }
 
 .nav-links-mobile a {

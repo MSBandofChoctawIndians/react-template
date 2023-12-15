@@ -34,15 +34,13 @@ const Navbar = ({ links }) => {
         </div>
         <button className="primary">Button</button>
       </div>
-      {isOpen && (
-        <div className="nav-links-mobile">
-          {links.map((link, id) => (
-            <a href={link.url} key={id}>
-              {link.label}
-            </a>
-          ))}
-        </div>
-      )}
+      <div className={`nav-links-mobile ${isOpen ? 'open' : ''}`}>
+        {links.map((link, id) => (
+          <a href={link.url} key={id}>
+            {link.label}
+          </a>
+        ))}
+      </div>
       <div className="nav-desktop">
         <div className="logo">
           <img src={Chevron} alt="logo" />
