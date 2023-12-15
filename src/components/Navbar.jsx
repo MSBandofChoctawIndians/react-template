@@ -17,7 +17,7 @@ const Navbar = ({ links }) => {
   return (
     <nav className="navbar">
       <div className="nav-mobile">
-        <button onClick={() => setIsOpen(!isOpen)} class="default">
+        <button onClick={() => setIsOpen(!isOpen)} className="default">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="16"
@@ -32,7 +32,7 @@ const Navbar = ({ links }) => {
           Office of <br />
           Public Information
         </div>
-        <button>Button</button>
+        <button className="primary">Button</button>
       </div>
       {isOpen && (
         <div className="nav-links-mobile">
@@ -55,7 +55,7 @@ const Navbar = ({ links }) => {
               {link.label}
             </a>
           ))}
-          <button>Button</button>
+          <button className="primary">Button</button>
         </div>
       </div>
     </nav>
