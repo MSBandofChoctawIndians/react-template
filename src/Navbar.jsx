@@ -17,7 +17,7 @@ const Navbar = ({ links }) => {
   return (
     <nav className="navbar">
       <div className="nav-mobile">
-        <button onClick={() => setIsOpen(!isOpen)}>
+        <button onClick={() => setIsOpen(!isOpen)} class="default">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="16"

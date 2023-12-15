@@ -45,6 +45,20 @@
   background-color: #e2e6ea;
 }
 
+button.default {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button.default:hover {
+  background-color: #e2e6ea;
+}
+
 .nav-mobile button {
   padding: 10px 20px;
   border: none;
