@@ -29,9 +29,7 @@ const Navbar = ({ links }) => {
         </button>
         <div className="logo">
           <img src={Chevron} alt="logo" />
-          Office of
-          <br />
-          Public Information
+          Office of Public Information
         </div>
         <button>Button</button>
       </div>
