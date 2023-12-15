@@ -44,7 +44,7 @@ const Navbar = ({ links }) => {
           className="close-btn"
           aria-label="Close menu"
         >
-          Close
+          &times;
         </button>
         <ul>
           {links.map((link, id) => (

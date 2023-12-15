@@ -51,17 +51,6 @@ const Carousel = ({ images }) => {
       >
         &#8594;
       </button>
-      <div className="carousel-indicators">
-        {images.map((_, index) => (
-          <button
-            key={index}
-            className={`carousel-indicator ${
-              index === activeIndex ? 'active' : ''
-            }`}
-            onClick={() => goToSlide(index)}
-          />
-        ))}
-      </div>
     </div>
   )
 }
