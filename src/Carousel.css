@@ -1,6 +1,28 @@
 .carousel-container {
   position: relative;
   width: 100%;
+  overflow: hidden;
+}
+
+.carousel-overlay-left,
+.carousel-overlay-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 20%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.carousel-overlay-right {
+  right: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+}
+
+.carousel-button-prev:hover ~ .carousel-overlay-left,
+.carousel-button-next:hover ~ .carousel-overlay-right {
+  opacity: 1;
 }
 
 .carousel-image-container {
