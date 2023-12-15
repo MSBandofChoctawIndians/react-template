@@ -78,12 +78,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: red;
   }
 
   .nav-links-desktop {
     display: flex;
-    gap: 20px;
+    align-items: center;
   }
 
   .nav-links-desktop a {
