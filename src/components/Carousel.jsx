@@ -1,3 +1,11 @@
+/**
+ * A carousel component that displays a slideshow of images.
+ *
+ * @component
+ * @param {Object[]} images - An array of image objects.
+ * @param {string} images[].src - The source URL of the image.
+ * @returns {JSX.Element} - The carousel component.
+ */
 import React, { useState } from 'react'
 import '../style/Carousel.css' // Import the CSS file
 
@@ -23,24 +31,25 @@ const Carousel = ({ images }) => {
   return (
     <div className="carousel-container">
       {images.map((image, index) => (
-        <img
+        <div
           key={index}
-          src={image.src}
-          className={`carousel-image ${index === activeIndex ? 'active' : ''}`}
-          alt="carousel"
-        />
+          className={`carousel-slide ${index === activeIndex ? 'active' : ''}`}
+        >
+          <img src={image.src} className="carousel-image" alt="carousel" />
+          <p className="carousel-caption">{image.caption}</p>
+        </div>
       ))}
       <button
         className="carousel-button carousel-button-prev"
         onClick={prevSlide}
       >
-        Prev
+        &#8592;
       </button>
       <button
         className="carousel-button carousel-button-next"
         onClick={nextSlide}
       >
-        Next
+        &#8594;
       </button>
       <div className="carousel-indicators">
         {images.map((_, index) => (
