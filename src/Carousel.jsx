@@ -82,34 +82,25 @@ function Carousel({ images }) {
 }
 
 // Renders the carousel dots
-function CarouselDots({ numDots, activeDot }) {
-  return (
-    <div className="carousel-dots">
-      {Array.from({ length: numDots }).map((_, i) => (
-        <span
-          key={i}
-          className={`carousel-dot ${i === activeDot ? 'active' : ''}`}
-        ></span>
-      ))}
-    </div>
-  )
+function CarouselDots({ numDots, activeDot, setCurrentImageIndex }) {
+  return Array.from({ length: numDots }).map((_, index) => (
+    <div
+      key={index}
+      className={`carousel-dot ${index === activeDot ? 'active' : ''}`}
+      onClick={() =>
+        setCurrentImageIndex(index)
+      } /* Add an onClick event to each dot */
+    ></div>
+  ))
 }
 
 Carousel.propTypes = {
-  images:
-    (PropTypes.arrayOf(
-      PropTypes.shape({
-        src: PropTypes.string,
-        caption: PropTypes.string
-      })
-    ).map = {
+  images: PropTypes.arrayOf(
+    PropTypes.shape({
       src: PropTypes.string,
       caption: PropTypes.string
-    }.length =
-      {
-        src: PropTypes.string,
-        caption: PropTypes.string
-      })
+    })
+  ).isRequired
 }
 
 export default Carousel
