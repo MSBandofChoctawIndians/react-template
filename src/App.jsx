@@ -1,4 +1,3 @@
-import { GeistMono } from 'geist/font/mono'
 import React from 'react'
 import Carousel from './components/Carousel'
 import Card from './Card'
@@ -43,7 +42,7 @@ function App() {
   ]
 
   return (
-    <main className={GeistMono.className}>
+    <>
       <Navbar />
       <Carousel images={images} />
       <Card />
@@ -57,7 +56,7 @@ function App() {
         <List items={fruits} category="Fruits" />
         <List items={vegetables} category="Vegetables" />
       </React.Suspense>
-    </main>
+    </>
   )
 }
 
