@@ -1,10 +1,11 @@
-.carousel-container {
-  position: relative;
+.carousel-image-container {
+  display: relative;
   width: 100%;
+  padding-top: 56.25%;
   overflow: hidden;
 }
 
-.carousel-container::before {
+.carousel-image-container::before {
   content: '';
   position: absolute;
   top: 0;
@@ -19,13 +20,6 @@
     rgba(0, 0, 0, 0.6) 100%
   );
   pointer-events: none;
-}
-
-.carousel-image-container {
-  display: relative;
-  width: 100%;
-  padding-top: 56.25%;
-  overflow: hidden;
 }
 
 .carousel-image {
